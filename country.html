@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countries-page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="country.css">
+</head>
+
+<body class="dark">
+
+
+    <header>
+
+        <div class="headerCont flex">
+            <a href="/" class="headTxt">
+                UNISON
+                <div class="txt2">where in the world?</div>
+            </a>
+
+
+            <div class="moon"><i class="fa-regular fa-moon"></i>&nbsp; &nbsp;Dark Mode</div>
+
+            <!-- nbsb is used for inline gap between html -->
+        </div>
+
+    </header>
+
+    <main>
+
+       <div class="containersOfCountry">
+
+        <span class="back-btn" onclick="history.back()"> <i class="fa-solid fa-arrow-left"></i> &nbsp; &nbsp;back </span>
+
+        <div class="country-details flex">
+
+            <img src="" alt="flag">
+
+            <div class="country-txt">
+
+                <h1>country-name</h1>
+
+
+                <div class="flex txt">
+                    <p><b>Native Name: </b><span class="native-name"></span></p>
+                    <p><b>Population: </b><span class="population"></span></p>
+                    <p><b>Region: </b><span class="region"></span></p>
+                    <p><b>Sub Region: </b><span class="sub-region"></span></p>
+                    <p><b>Capital: </b><span class="capital"></span></p>
+                    <p>
+                        <b>Top Level Domain: </b><span class="top-level-domain"></span>
+                    </p>
+                    <p><b>Currencies: </b><span class="currencies"></span></p>
+                    <p><b>Languages: </b><span class="languages"></span></p>
+                </div>
+
+                <div class="border-Country">
+
+                    <b>Border Countries: &nbsp; </b> 
+
+                </div>
+            </div>
+
+        </div>
+
+       </div>
+
+    </main>
+
+    <script src="country.js" defer></script>
+</body>
+
+</html>
