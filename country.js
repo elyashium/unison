@@ -71,10 +71,11 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`).then((
         moon.addEventListener('click', () => {
             document.body.classList.toggle('dark')
             if (document.body.classList.contains('dark')) {
-                moon.innerText = 'Light Mode';
+                moon.innerHTML = '<i class="fa-regular fa-sun"></i>&nbsp; &nbsp;Light Mode';
+        
+                
             } else {
-                moon.innerText = 'Dark Mode';
+                moon.innerHTML = '<i class="fa-regular fa-moon"></i>&nbsp; &nbsp;Dark mode';
             }
         })
-
     });
