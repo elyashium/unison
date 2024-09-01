@@ -13,7 +13,7 @@ fetch('https://restcountries.com/v3.1/all')
         allCountriesData = data
     })
 
-filterByRegion.addEventListener('change', (e) => {
+filterByRegion.addEventListener('change', () => {
     fetch(`https://restcountries.com/v3.1/region/${filterByRegion.value}`)
         .then((res) => res.json())
         .then(renderCountries)
