@@ -73,9 +73,11 @@ searchInput.addEventListener('input', (e) => {
 moon.addEventListener('click', () => {
     document.body.classList.toggle('dark')
     if (document.body.classList.contains('dark')) {
-        moon.innerText = 'Light Mode';
+        moon.innerHTML = '<i class="fa-regular fa-sun"></i>&nbsp; &nbsp;Light Mode';
+
+        
     } else {
-        moon.innerText = 'Dark Mode';
+        moon.innerHTML = '<i class="fa-regular fa-moon"></i>&nbsp; &nbsp;Dark mode';
     }
 })
 
